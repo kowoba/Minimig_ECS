@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 -- Engineer: Mike Field <hamster@snap.net.nz>
--- 
--- Description: Generates a test 720x480 --800x600 signal 
+--
+-- Description: Generates a test 720x480 --800x600 signal
 --
 ----------------------------------------------------------------------------------
 library IEEE;
@@ -24,17 +24,15 @@ architecture Behavioral of vga_gen is
    constant h_sync_start : natural := 800+40;
    constant h_sync_end   : natural := 800+40+128;
    constant h_max        : natural := 1056;
-   
+
    --constant h_rez        : natural := 720;
    --constant h_sync_start : natural := 720+16;
    --constant h_sync_end   : natural := 800+16+62;
-   --constant h_max        : natural := 800+16+62+60;
+   --constant h_max        : natural := 800+16+62+60;
    --constant h_rez        : natural := 640;
    --constant h_sync_start : natural := 640+16;
    --constant h_sync_end   : natural := 640+16+96;
    --constant h_max        : natural := 640+16+96+48;
-   
-
 
    signal   h_count      : unsigned(11 downto 0) := (others => '0');
    signal   h_offset     : unsigned(7 downto 0) := (others => '0');
@@ -43,17 +41,17 @@ architecture Behavioral of vga_gen is
    constant v_sync_start : natural := 600+1;
    constant v_sync_end   : natural := 600+1+4;
    constant v_max        : natural := 628;
-   
+
    --constant v_rez        : natural := 400;
    --constant v_sync_start : natural := 400+12;
    --constant v_sync_end   : natural := 400+12+2;
    --constant v_max        : natural := 400+12+2+35;
-   
+
    signal   v_count      : unsigned(11 downto 0) := x"250";
    signal   v_offset     : unsigned(7 downto 0) := (others => '0');
 begin
 
-   
+
 process(clk40)
    begin
       if rising_edge(clk40) then
@@ -84,13 +82,13 @@ process(clk40)
          else
             hsync <= '0';
          end if;
-         
+
          if v_count >= v_sync_start and v_count < v_sync_end then
             vsync <= '1';
          else
             vsync <= '0';
          end if;
-         
+
          if h_count = h_max then
             h_count <= (others => '0');
             if v_count = v_max then
