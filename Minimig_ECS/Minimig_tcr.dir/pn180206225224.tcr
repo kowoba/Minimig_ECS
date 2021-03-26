@@ -1,0 +1,13 @@
+#Start recording tcl command: 2/6/2018 22:49:58
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Minimig_ECS; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Minimig_ECS/Minimig_ECS.ldf"
+pgr_project open "C:/lscc/diamond/3.3_x64/examples/Minimig_ECS/sram_config.xcf"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Minimig_ECS/sram_config.xcf"
+prj_src enable "C:/lscc/diamond/3.3_x64/examples/Minimig_ECS/flash_config.xcf"
+pgr_project close
+pgr_project open "C:/lscc/diamond/3.3_x64/examples/Minimig_ECS/flash_config.xcf"
+pgr_project save "C:/lscc/diamond/3.3_x64/examples/Minimig_ECS/flash_config.xcf"
+pgr_project save "C:/lscc/diamond/3.3_x64/examples/Minimig_ECS/flash_config.xcf"
+pgr_project save "C:/lscc/diamond/3.3_x64/examples/Minimig_ECS/flash_config.xcf"
+pgr_project close
+#Stop recording: 2/6/2018 22:52:24

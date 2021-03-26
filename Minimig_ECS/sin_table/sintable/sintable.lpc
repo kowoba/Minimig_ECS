@@ -1,0 +1,41 @@
+[Device]
+Family=ecp5um5g
+PartType=LFE5UM5G-25F
+PartName=LFE5UM5G-25F-8MG285C
+SpeedGrade=8
+Package=CSFBGA285
+OperatingCondition=COM
+Status=C
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=Sin-Cos_Table
+CoreRevision=1.6
+ModuleName=sintable
+SourceFormat=VHDL
+ParameterFileVersion=1.0
+Date=05/06/2016
+Time=16:05:32
+
+[Parameters]
+Verilog=0
+VHDL=1
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+pmi_implemenntation=EBR
+pmi_dataa_width=8
+pmi_datab_width=16
+pmi_output_mode=Sin-Cos
+pmi_optimize_mem=0
+pmi_use_1bit=1
+pmi_input_reg=1
+pmi_output_reg=1
+pmi_pipeline=1
+
+[Command]
+cmd_line= -w -n sintable -lang vhdl -synth synplify -bus_exp 7 -bb -arch sa5p00g -type cosine -addr_width 8 -width 16 -input_reg -input_reg -mode 6 -output_reg

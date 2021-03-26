@@ -1,0 +1,2 @@
+VHDL_ENTITY_ONLY OSDBootstrap DEFIN OSDBootstrap.vhd
+MODULE OSDBootstrap DEFIN OSDBootstrap.vhd

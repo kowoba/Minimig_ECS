@@ -1,0 +1,6 @@
+Clock  i
+ClkEn  i
+Reset  i
+Theta i
+Sine o
+Cosine o

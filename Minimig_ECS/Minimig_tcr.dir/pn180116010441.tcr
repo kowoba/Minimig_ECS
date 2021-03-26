@@ -1,0 +1,5 @@
+#Start recording tcl command: 1/16/2018 00:28:15
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+pgr_project close
+#Stop recording: 1/16/2018 01:04:41

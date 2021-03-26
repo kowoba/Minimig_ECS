@@ -1,0 +1,2 @@
+VHDL_ENTITY_ONLY hdmi_upscale_buffer DEFIN hdmi_upscale_buffer.vhd
+MODULE hdmi_upscale_buffer DEFIN hdmi_upscale_buffer.vhd

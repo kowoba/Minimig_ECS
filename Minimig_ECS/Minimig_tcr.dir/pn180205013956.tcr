@@ -1,0 +1,25 @@
+#Start recording tcl command: 2/4/2018 17:25:31
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+prj_run Synthesis -impl impl1
+prj_src exclude "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/RTL/FleaFPGA_2v4_top.vhd"
+prj_src add "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/RTL/FleaFPGA_Ohm_A5_minimig.vhd"
+prj_run Translate -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Translate -impl impl1
+prj_run Translate -impl impl1
+prj_src add -exclude "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/FleaFPGA_Ohm_A5.lpf"
+prj_src enable "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/FleaFPGA_Ohm_A5.lpf"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Flea_Ohm_Mk2_B2_testonly.lpf"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Flea_zero_A2.lpf"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/test/test.spf"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/RTL/FleaFPGA_2v4_top.vhd"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/RTL/Amber_simplified.v"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/impl1/source/sdram.vhd"
+prj_run Export -impl impl1
+prj_run Translate -impl impl1
+prj_run Translate -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 2/5/2018 01:39:56

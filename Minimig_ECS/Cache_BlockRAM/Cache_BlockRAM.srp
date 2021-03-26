@@ -1,0 +1,29 @@
+SCUBA, Version Diamond (64-bit) 3.9.1.119
+Fri Oct 13 00:11:25 2017
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.9_x64\ispfpga\bin\nt64\scuba.exe -w -n Cache_BlockRAM -lang verilog -synth synplify -bus_exp 7 -bb -arch sa5p00 -type ramdp -device LFE5U-25F -aaddr_width 9 -widtha 18 -baddr_width 9 -widthb 18 -anum_words 512 -bnum_words 512 -cascade -1 -mem_init0 -writemodeA NORMAL -writemodeB NORMAL -fdc C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Cache_BlockRAM/Cache_BlockRAM.fdc 
+    Circuit name     : Cache_BlockRAM
+    Module type      : RAM_DP_TRUE
+    Module Version   : 7.5
+    Ports            : 
+	Inputs       : DataInA[17:0], DataInB[17:0], AddressA[8:0], AddressB[8:0], ClockA, ClockB, ClockEnA, ClockEnB, WrA, WrB, ResetA, ResetB
+	Outputs      : QA[17:0], QB[17:0]
+    I/O buffer       : not inserted
+    Memory file      : INIT_ALL_0s
+    EDIF output      : Cache_BlockRAM.edn
+    Verilog output   : Cache_BlockRAM.v
+    Verilog template : Cache_BlockRAM_tmpl.v
+    Verilog testbench: tb_Cache_BlockRAM_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : Cache_BlockRAM.srp
+    Element Usage    :
+         DP16KD : 1
+    Estimated Resource Usage:
+            EBR : 1

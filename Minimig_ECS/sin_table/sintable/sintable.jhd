@@ -1,0 +1,2 @@
+VHDL_ENTITY_ONLY sintable DEFIN sintable.vhd
+MODULE sintable DEFIN sintable.vhd

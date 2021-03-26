@@ -1,0 +1,8 @@
+Clock  i
+ClockEn  i
+Reset  i
+ByteEn i
+WE  i
+Address i
+Data i
+Q o

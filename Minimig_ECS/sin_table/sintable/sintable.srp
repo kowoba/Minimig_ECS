@@ -1,0 +1,30 @@
+SCUBA, Version Diamond (64-bit) 3.7.1.502
+Fri May 06 16:05:34 2016
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2016 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.7_x64\ispfpga\bin\nt64\scuba.exe -w -n sintable -lang vhdl -synth synplify -bus_exp 7 -bb -arch sa5p00g -type cosine -addr_width 8 -width 16 -input_reg -input_reg -mode 6 -output_reg -fdc C:/lscc/diamond/3.1_x64/examples/XO2HDMI/sin_table/sintable/sintable.fdc 
+    Circuit name     : sintable
+    Module type      : cosine
+    Module Version   : 1.6
+    Ports            : 
+	Inputs       : Clock, ClkEn, Reset, Theta[7:0]
+	Outputs      : Sine[15:0], Cosine[15:0]
+    I/O buffer       : not inserted
+    EDIF output      : sintable.edn
+    VHDL output      : sintable.vhd
+    VHDL template    : sintable_tmpl.vhd
+    VHDL testbench    : tb_sintable_tmpl.vhd
+    VHDL purpose     : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : sintable.srp
+    Element Usage    :
+        FD1P3DX : 8
+         DP16KD : 1
+    Estimated Resource Usage:
+            EBR : 1
+            Reg : 8

@@ -1,0 +1,167 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn180113195303"></A><B><U><big>pn180113195303</big></U></B>
+#Start recording tcl command: 1/13/2018 16:34:09
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+#Stop recording: 1/13/2018 19:53:03
+
+
+
+<A name="pn180116010441"></A><B><U><big>pn180116010441</big></U></B>
+#Start recording tcl command: 1/16/2018 00:28:15
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+pgr_project close
+#Stop recording: 1/16/2018 01:04:41
+
+
+
+<A name="pn180116162906"></A><B><U><big>pn180116162906</big></U></B>
+#Start recording tcl command: 1/16/2018 13:43:13
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+prj_project close
+#Stop recording: 1/16/2018 16:29:06
+
+
+
+<A name="pn180117153528"></A><B><U><big>pn180117153528</big></U></B>
+#Start recording tcl command: 1/17/2018 12:37:46
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+#Stop recording: 1/17/2018 15:35:28
+
+
+
+<A name="pn180118115105"></A><B><U><big>pn180118115105</big></U></B>
+#Start recording tcl command: 1/18/2018 10:45:15
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+#Stop recording: 1/18/2018 11:51:05
+
+
+
+<A name="pn180203204915"></A><B><U><big>pn180203204915</big></U></B>
+#Start recording tcl command: 2/3/2018 20:15:34
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+prj_src enable "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/flash_config.xcf"
+#Stop recording: 2/3/2018 20:49:15
+
+
+
+<A name="pn180205013956"></A><B><U><big>pn180205013956</big></U></B>
+#Start recording tcl command: 2/4/2018 17:25:31
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+prj_run Synthesis -impl impl1
+prj_src exclude "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/RTL/FleaFPGA_2v4_top.vhd"
+prj_src add "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/RTL/FleaFPGA_Ohm_A5_minimig.vhd"
+prj_run Translate -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Translate -impl impl1
+prj_run Translate -impl impl1
+prj_src add -exclude "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/FleaFPGA_Ohm_A5.lpf"
+prj_src enable "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/FleaFPGA_Ohm_A5.lpf"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Flea_Ohm_Mk2_B2_testonly.lpf"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Flea_zero_A2.lpf"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/test/test.spf"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/RTL/FleaFPGA_2v4_top.vhd"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/RTL/Amber_simplified.v"
+prj_src remove "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/impl1/source/sdram.vhd"
+prj_run Export -impl impl1
+prj_run Translate -impl impl1
+prj_run Translate -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 2/5/2018 01:39:56
+
+
+
+<A name="pn180205100617"></A><B><U><big>pn180205100617</big></U></B>
+#Start recording tcl command: 2/5/2018 08:40:30
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+prj_run Translate -impl impl1
+#Stop recording: 2/5/2018 10:06:17
+
+
+
+<A name="pn180205133345"></A><B><U><big>pn180205133345</big></U></B>
+#Start recording tcl command: 2/5/2018 11:53:56
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+prj_run Export -impl impl1
+#Stop recording: 2/5/2018 13:33:45
+
+
+
+<A name="pn180206224235"></A><B><U><big>pn180206224235</big></U></B>
+#Start recording tcl command: 2/6/2018 18:17:03
+#Project Location: C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI; Project name: Minimig
+prj_project open "C:/lscc/diamond/3.3_x64/examples/Flea_zero_Amiga_HDMI/Minimig_flea_zero.ldf"
+#Stop recording: 2/6/2018 22:42:35
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
