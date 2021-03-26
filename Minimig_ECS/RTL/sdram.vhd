@@ -205,7 +205,7 @@ begin
 	end process;		
 		
 	
---Datenübernahme
+--DatenÃ¼bernahme
 	process (sysclk, reset) begin
 		if reset = '0' THEN
 			zcache_fill <= '0';
@@ -320,7 +320,7 @@ begin
 	end process;		
 		
 	
---Datenübernahme
+--DatenÃ¼bernahme
 	process (sysclk, reset) begin
 		if reset = '0' THEN
 			ccache_fill <= '0';
